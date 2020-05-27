@@ -1,7 +1,11 @@
 idf_component_register(INCLUDE_DIRS "link/include"
-                       REQUIRES asio)
-
-if(NOT DEFINED LINK_ESP_TASK_CORE_ID)
+                       REQUIRES asio wpa_supplicant)
+if(CONFIG_LINK_TASK_AFFINITY_NO_AFFINITY)
   set(LINK_ESP_TASK_CORE_ID tskNO_AFFINITY)
+elseif(CONFIG_LINK_TASK_AFFINITY_CPU0)
+  set(LINK_ESP_TASK_CORE_ID 0)
+elseif(CONFIG_LINK_TASK_AFFINITY_CPU1)  
+  set(LINK_ESP_TASK_CORE_ID 1)
 endif()
-target_compile_definitions(${COMPONENT_LIB} PRIVATE LINK_ESP_TASK_CORE_ID=${LINK_ESP_TASK_CORE_ID})
+message("link cpu: " ${LINK_ESP_TASK_CORE_ID})
+target_compile_definitions(${COMPONENT_LIB} INTERFACE LINK_ESP_TASK_CORE_ID=${LINK_ESP_TASK_CORE_ID})
