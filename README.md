@@ -2,8 +2,8 @@
 
 # link-idf
 I created this unofficial ESP-IDF component for Ableton Link. For more info about Link, see
-* [github.com/ableton/link](https://github.com/ableton/link)
-* [ableton.github.io/link](http://ableton.github.io/link)
+* https://github.com/ableton/link
+* http://ableton.github.io/link
 
 ## Installation
 * Move into components folder of a project
