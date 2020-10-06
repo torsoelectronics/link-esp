@@ -4,5 +4,5 @@ I created this unofficial ESP-IDF component for Ableton Link. For more info abou
 * http://ableton.github.io/link
 
 ## Installation
-* Move into components folder of a project
+* Clone into components folder of a project
 * See [example](https://github.com/mathiasbredholt/link-idf-example)
