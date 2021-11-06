@@ -1,3 +1,4 @@
 [submodule "link"]
 	path = link
-	url = https://github.com/mathiasbredholt/link
+	url = https://github.com/ctag-fh-kiel/link.git
+	branch = float
