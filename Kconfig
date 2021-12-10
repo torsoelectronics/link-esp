@@ -2,7 +2,7 @@ menu "Ableton Link"
 
     choice LINK_TASK_AFFINITY
         prompt "Link task affinity"
-        default LINK_TASK_AFFINITY_NO_AFFINITY
+        default LINK_TASK_AFFINITY_CPU0
         help
             Allows setting Link tasks affinity, i.e. whether the task is pinned to
             CPU0, pinned to CPU1, or allowed to run on any CPU.
