@@ -1,4 +1,4 @@
-idf_component_register(REQUIRES esp_netif)
+idf_component_register(REQUIRES esp_netif asio)
 if(CONFIG_LINK_TASK_AFFINITY_NO_AFFINITY)
   set(LINK_ESP_TASK_CORE_ID tskNO_AFFINITY)
 elseif(CONFIG_LINK_TASK_AFFINITY_CPU0)
